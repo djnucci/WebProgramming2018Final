@@ -6,7 +6,6 @@ body {
     display: table-cell;
     /* vertical-align: middle; */
     margin: auto;
-    /* background-image: linear-gradient(darkblue, lightblue); */
 
 }
 
@@ -40,15 +39,14 @@ img{
     margin-left: 100px;
     margin-right: 100px;
     width: 100%;
-    text-align: center:
+    text-align: center;
 }
 
 tr, td{
   padding: 50px;
 }
 
-/*
-#glasses{
-  width: 100px;
-  height: 100px;
-} */
+.wrapper{
+
+
+}
