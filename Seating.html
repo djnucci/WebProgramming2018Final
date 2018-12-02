@@ -2,9 +2,65 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="/css/style.css">
+        <title>SAND Movies</title>
+        <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <style type="text/css">
+            html, body {
+                height: 100%;
+            }
+
+            body {
+                display: table-cell;
+                vertical-align: middle;
+                margin: auto;
+            }
+
+            html {
+                display: table;
+                margin-left: 50px;
+                margin-right: 50px;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+            }
+
+            p, h1, h3{
+              color: white;
+              font-family: cambria, Helvetica, sans-serif;
+            }
+
+            p, h3{
+              text-align: center;
+            }
+            
+            h1{
+              font-size: 80px;
+            }
+
+        </style>
     </head>
     <body>
-        
+        <h1>Please select a Room:</h1>
+        <select name="Rooms" id="room">
+            <span id="roomNames">
+                <option value="null">Please select a theatre...</option>
+                <option value="roomA">Theatre A</option>
+                <option value="roomB">Theatre B</option>
+                <option value="roomC">Theatre C</option>
+            </span>
+        </select>
+
+        <input type="button" value="Confirm Seat" name="SubmitSeat" id="submitSeat">
+
+        <table id="roomSeating">
+            <td id="rowOne">
+                <tr></tr>
+            </td>
+            <td id="rowTwo">
+                <tr></tr>
+            </td>
+            <td id="rowThree">
+                <tr></tr>
+            </td>
+        </table>
     </body>
 </html>
