@@ -24,7 +24,7 @@
 					if(mysqli_num_rows($result) > 0){
 						//create dropdown entry for each SQL table row
 						while($row = mysqli_fetch_array($result)){
-							echo "<option value='".$row["seat_ID"]."'>"." Seat ".$row["seatID"]."</option>";}
+							echo "<option value='".$row["seat_ID"]."'>"." Seat ".$row["seat_ID"]."</option>";}
 						// Free result set
 						mysqli_free_result($result);
 					} else{
