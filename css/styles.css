@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    width: 90%;
 }
 
 body {
@@ -47,6 +48,6 @@ tr, td{
 }
 
 .wrapper{
-
+  margin: auto;
 
 }

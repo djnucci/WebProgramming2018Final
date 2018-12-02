@@ -31,12 +31,13 @@
             </div>
 
           </div>
+
           <div class="jumbotron text-center">
             <h1>SAND Movies</h1>
             <p>some catchphrawse</p>
           </div>
 
-        <h1>Please select a movie:</h1>
+        <h2>Please select a movie:</h2>
         <div class="wrapper">
             <select name="Movies" id="movie">
                 <span id="movieName">
@@ -62,7 +63,7 @@
             </select>
         </div>
         <div class="wrapper">
-            <input type="button" value="Confirm Time" name="submitMovieTime" id="submitMovieTime" style="visibility: hidden;" onClick="document.getElementById('movieSeat').style.visibility='visible', document.getElementById('submitSeat').style.visibility='visible';">
+            <input type="button" value="Confirm Time" name=4"submitMovieTime" id="submitMovieTime" style="visibility: hidden;" onClick="document.getElementById('movieSeat').style.visibility='visible', document.getElementById('submitSeat').style.visibility='visible';">
             <!--this onClick should take the information from the previous dropdown and take the requisite information from the sql database-->
         </div>
 
@@ -77,5 +78,11 @@
             <input type="button" value="Confirm Seat" name="SubmitSeat" id="submitSeat" style="visibility: hidden;">
             <!--This Onclick should make a php call to take the information, validate, and submit to the sql database-->
         </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>
