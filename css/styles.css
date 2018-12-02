@@ -1,0 +1,54 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: table-cell;
+    /* vertical-align: middle; */
+    margin: auto;
+    /* background-image: linear-gradient(darkblue, lightblue); */
+
+}
+
+html {
+    display: table;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-image: linear-gradient(darkblue, lightblue);
+}
+p, h1, h2, h3{
+  color: black;
+  font-family: cambria, Helcetica, sans-serif;
+}
+p, h3{
+  text-align: center;
+}
+h1{
+  font-size: 80px;
+}
+
+button{
+  background-color: red;
+
+}
+
+img{
+  width: 50%;
+}
+
+#table1{
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 100%;
+    text-align: center:
+}
+
+tr, td{
+  padding: 50px;
+}
+
+/*
+#glasses{
+  width: 100px;
+  height: 100px;
+} */
