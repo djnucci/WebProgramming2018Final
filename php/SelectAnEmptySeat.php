@@ -11,8 +11,8 @@
 		<form method="post">
 			<?php
 			require_once "../config.php";
-			$table = "seats";
-			
+			$table = "movies";
+
 			//collect results from movieselector dropdown
 			$movie = $_POST["movie"];
 
