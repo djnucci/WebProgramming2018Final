@@ -42,20 +42,18 @@
                 <li>Spoon: A 'The Office' Retrospective</li>
             </ul>
 
-            <form action="../php/GetMovieStatus.php" method="POST" id="idk">
+            <form action="../php/GetMovieStatus.php" method="post" id="idk">
                 <div class="wrapper">
                     <select name="Movies" id="movie">
-                        <span id="movieName">
-                            <option value="null">Please select a movie...</option>
-                            <option value="movie0">70 Jump Street: Dental Hygiene School</option>
-                            <option value="movie1">8 Hours of Sleep on Elm Street</option>
-                            <option value="movie2">Stan Lee Cameo's: The Movie</option>
-                            <option value="movie3">Obligatory Rom-Com: A Horror Film</option>
-                            <option value="movie4">Spoon: A 'The Office' Retrospective</option>
-                        </span>
+                        <option value="null">Please select a movie...</option>
+                        <option value="movie0">70 Jump Street: Dental Hygiene School</option>
+                        <option value="movie1">8 Hours of Sleep on Elm Street</option>
+                        <option value="movie2">Stan Lee Cameo's: The Movie</option>
+                        <option value="movie3">Obligatory Rom-Com: A Horror Film</option>
+                        <option value="movie4">Spoon: A 'The Office' Retrospective</option>
                     </select>
                 </div>
-                <div style="text-align:center"><input type="submit" form="idk" value="Submit" id="submitDOB" onclick="window.location.href='./html/Times.html'"></div>
+                <div style="text-align:center"><input type="submit" name='submit' form="idk" value="Submit" id="submitDOB" onclick="window.location.href='./html/Times.html'"></div>
             </form>
 
 </div>
