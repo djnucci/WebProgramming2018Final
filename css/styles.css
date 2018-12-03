@@ -1,5 +1,13 @@
 /* css for all html pages */
 
+.seatImg{
+    width: 10vh;
+}
+
+.halfOffset{
+    width: 5vh;
+}
+
 html, body {
     height: 100%;
     width: 90%;
@@ -7,6 +15,7 @@ html, body {
 
 body {
     display: table-cell;
+
     /* vertical-align: middle; */
     margin: auto;
 
@@ -40,15 +49,19 @@ img{
 #table1{
     margin-left: 100px;
     margin-right: 100px;
-    width: 100%;
+    width: 100%;,
     text-align: center;
 }
 
-tr, td{
+#talk{
+  margin: 50px;
+}
+
+#tab{
   padding: 50px;
 }
 
-#wrap{
+#wrap, #room{
   margin: auto;
   text-align: center;
 

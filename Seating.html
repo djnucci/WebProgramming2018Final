@@ -3,50 +3,38 @@
     <head>
         <meta charset="UTF-8">
         <title>SAND Movies</title>
-        <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <style type="text/css">
-            html, body {
-                height: 100%;
-            }
+        <link href="css/bootstrap.min.css" rel="stylesheet" >
+        <link rel="stylesheet" href="css/styles.css">
 
-            body {
-                display: table-cell;
-                vertical-align: middle;
-                margin: auto;
-            }
-
-            html {
-                display: table;
-                margin-left: 50px;
-                margin-right: 50px;
-                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
-            }
-
-            p, h1, h3{
-              color: white;
-              font-family: cambria, Helvetica, sans-serif;
-            }
-
-            p, h3{
-              text-align: center;
-            }
-            
-            h1{
-              font-size: 80px;
-            }
-
-            .seatImg{
-                width: 10vh;
-            }
-
-            .halfOffset{
-                width: 5vh;
-            }
-        </style>
     </head>
     <body>
-        <h1>Please select a Theatre:</h1>
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">SAND Movies</a>
+              </div>
+              <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#contact" data-toggle="modal">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <div class="jumbotron text-center">
+            <h1>SAND Movies</h1>
+            <p>some catchphrase</p>
+          </div>
+
+        <h3>Please select a Theatre:</h3>
         <select name="Rooms" id="room">
             <span id="roomNames">
                 <option value="null">Please select a theatre...</option>
@@ -55,11 +43,11 @@
                 <option value="roomC">Theatre C</option>
             </span>
         </select>
-        
+
         <input type="button" value="Confirm Theatre" name="SubmitRoom" id="submitRoom">
 
-        <br><br> 
-        
+        <br><br>
+
         <table>
             <tr id="rowOne" class="oddRow">
                 <td class="halfOffset"></td>
@@ -96,7 +84,10 @@
                 <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
                 <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
                 <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
-            </tr> 
+            </tr>
         </table>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
