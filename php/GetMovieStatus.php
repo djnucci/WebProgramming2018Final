@@ -1,5 +1,15 @@
 <?php
-	$movieName = $_POST["Movies"];
+	if ($_POST["Movies"] == "movie0"){
+		$movieName = "70 Jump Street: Dental Hygiene School";
+	} else if ($_POST["Movies"] == "movie1"){
+		$movieName = "8 Hours of Sleep on Elm Street";
+	} else if ($_POST["Movies"] == "movie2"){
+		$movieName = "Stan Lee Cameo's: The Movie";
+	} else if ($_POST["Movies"] == "movie3"){
+		$movieName = "Obligatory Rom-Com: A Horror Film";
+	} else{
+		$movieName = "Spoon: A 'The Office' Retrospective";
+	}
 	echo json_encode($movieName);
 	$timeA = $timeB = $timeC = "";
 
