@@ -2,10 +2,10 @@ SAND's Movies
 
 Movie durations:
     (m0 - PG-13) 70 Jump Street: Dental Hygiene School: 1:45
-    (m1 - E) 8 Hours of Sleep on Elm Street (3D movie): 1:30
+    (m1 - E)     8 Hours of Sleep on Elm Street (3D movie): 1:30
     (m2 - PG-13) Stan Lee Cameo's: The Movie: 2:00
-    (m3 - R) Obligatory Rom-Com: A Horror Film: 1:30
-    (m4 - E) Spoon: A 'The Office' Retrospective: 1:45
+    (m3 - R)     Obligatory Rom-Com: A Horror Film: 1:30
+    (m4 - E)     Spoon: A 'The Office' Retrospective: 1:45
 
 ~15 minute intermediary time for cleanup after the movies
 
@@ -26,11 +26,10 @@ Room B
 
 Room C
     0800 - m3 - 0930
-    0945 - m4 - 1145
-    1200 - m1 - 1330
-    1345 - m2 - 1545
-    1600 - m0 - 1730
-
+    0945 - m4 - 1130
+    1145 - m1 - 1315
+    1330 - m2 - 1530
+    1545 - m0 - 1730
 
 (Seating)
 Room A
