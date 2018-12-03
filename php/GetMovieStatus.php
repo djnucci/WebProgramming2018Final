@@ -73,7 +73,7 @@
               <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                   <li class="active"><a href="index.html">Home</a></li>
-                  <li><a href="/html/contact.html" data-toggle="modal">Contact</a></li>
+                  <li><a href="/html/Contact.html" data-toggle="modal">Contact</a></li>
                 </ul>
               </div>
             </div>
@@ -97,10 +97,10 @@
                   </span>
               </select>
           </div>
-          
+
       </form>
 
-        
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
