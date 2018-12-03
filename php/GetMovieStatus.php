@@ -1,5 +1,6 @@
 <?php
 	$movieName = $_POST["Movies"];
+	echo json_encode($movieName);
 	$timeA = $timeB = $timeC = "";
 
 	include "config.php";
