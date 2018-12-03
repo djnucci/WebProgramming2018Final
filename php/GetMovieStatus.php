@@ -48,17 +48,5 @@
 		}
 	}
 
-	echo '<select name="times"><span id="chooseTime">';
-	echo '<option value="'.htmlspecialchars("null").'">'.htmlspecialchars("Please select a time...").'</option>';
-	for ($i = 0; $i < 3; $i++){
-		if ($i == 0){
-			echo '<option value="'.htmlspecialchars($i).'">'.htmlspecialchars($timeA).'</option>';
-		} else if ($i == 1){
-			echo '<option value="'.htmlspecialchars($i).'">'.htmlspecialchars($timeB).'</option>';
-		} else{
-			echo '<option value="'.htmlspecialchars($i).'">'.htmlspecialchars($timeC).'</option>';
-		}
-	}
-	echo '</span></select>';
-
+	header("location: ../html/Times.html");
 ?>
