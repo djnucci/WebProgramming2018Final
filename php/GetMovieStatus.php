@@ -1,6 +1,5 @@
 <?php
-	//$movieName = $_POST["Movies"];
-	$movieName = '\'70 Jump Street: Dental Hygiene School\'';
+	$movieName = $_POST["Movies"];
 	$timeA = $timeB = $timeC = "";
 
 	include "config.php";
