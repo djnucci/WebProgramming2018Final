@@ -82,7 +82,7 @@
           </div>
           <div class="jumbotron text-center">
             <h1>SAND Movies</h1>
-            <p>some catchphrase</p>
+            <p>All the worlds a stage</p>
           </div>
 
         <h3>Play Times:</h3>
@@ -97,7 +97,7 @@
                   </span>
               </select>
           </div>
-
+                <div style="text-align:center"><input type="submit" name='submit' form="idk" value="Submit" id="submitDOB" onclick="window.location.href='./html/Seating.html'"></div>
       </form>
 
 
