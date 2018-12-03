@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SAND Movies</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+    <body>
+
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">SAND Movies</a>
+              </div>
+              <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="Contact.html" data-toggle="modal">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="jumbotron text-center">
+            <h1>SAND Movies</h1>
+            <p>some catchphrase</p>
+          </div>
+<div id="wrap">
+  <p> Select your movie, then time, finally confirm which seat</p>
+        <h3>Select a movie:</h3>
+        <form method='post' id="confirmmovie">
+        <div class="wrapper">
+            <select name="Movies" id="movie">
+                <span id="movieName">
+                    <option value="null">Please select a movie...</option>
+                    <option value="movie0">70 Jump Street: Dental Hygiene School</option>
+                    <option value="movie1">8 Hours of Sleep on Elm Street</option>
+                    <option value="movie2">Stan Lee Cameo's: The Movie</option>
+                    <option value="movie3">Obligatory Rom-Com: A Horror Film</option>
+                    <option value="movie4">Spoon: A 'The Office' Retrospective</option>
+                </span>
+            </select>
+        </div>
+        <div class="wrapper">
+            <input type="button" value="Confirm Movie" name="submitMovieName" id="submitMovieName" onClick="document.getElementById('movieTimes').style.visibility='visible', document.getElementById('submitMovieTime').style.visibility='visible', document.getElementById('confirmmovie').submit();">
+            <!--this onClick should take the information from the previous dropdown and take the requisite information from the sql database-->
+        </div>
+        </form>
+
+        <br><br>
+
+        <form method='post' id="confirmtime">
+        <div class="wrapper" style="visibility:hidden;">
+            <select name="MovieTimes" id="movieTimes" >
+                <span id="">
+                    <?php
+                        require_once "../config.php";
+
+                        $movieid = $_POST["Movies"];
+
+                        echo "<select name='seatselector'>";
+                            $request = "SELECT start_time, end_time FROM ".$table." WHERE movie_name='".$movie."'";
+
+                            if($result = mysqli_query($conn, $request)){
+                                if(mysqli_num_rows($result) > 0){
+                                    //create dropdown entry for each SQL table row
+                                    while($row = mysqli_fetch_array($result)){
+                                        echo "<option value='".$row["movie_ID"]."'>".$row["start_time"]." - ".$row["end_time"]."</option>";}
+                                    // Free result set
+                                    mysqli_free_result($result);
+                                } else{
+                                    echo "No records matching your query";}
+                            } else{
+                            echo "ERROR: Could not execute " . mysqli_error($conn);}
+                    ?>
+                </span>
+            </select>
+            <input type="button" value="Confirm Time" name="submitMovieTime" id="submitMovieTime"onClick="document.getElementById('movieSeat').style.visibility='visible', document.getElementById('submitSeat').style.visibility='visible', document.getElementById('confirmmovie').submit();">
+            <!--this onClick should take the information from the previous dropdown and take the requisite information from the sql database-->
+        </div>
+        </form>
+
+        <br><br>
+
+        <div class="wrapper" style="visibility:hidden;" id="seats">
+            <table class="centered">
+                <tr id="rowOne" class="oddRow">
+                    <td class="halfOffset" class="oddRow"></td>
+                    <td class="oddRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                    <td class="oddRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                    <td class="oddRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                    <td class="oddRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                    <td class="oddRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                    <td class="oddRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                    <td class="oddRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                </tr>
+                <tr class="oddRow">
+                    <td class="halfOffset" class="oddRow"></td>
+                    <td class="oddRow"><input type="button" value="Pick C1"></td>
+                    <td class="oddRow"><input type="button" value="Pick C2"></td>
+                    <td class="oddRow"><input type="button" value="Pick C3"></td>
+                    <td class="oddRow"><input type="button" value="Pick C4"></td>
+                    <td class="oddRow"><input type="button" value="Pick C5"></td>
+                    <td class="oddRow"><input type="button" value="Pick C6"></td>
+                    <td class="oddRow"><input type="button" value="Pick C7"></td>
+                </tr>
+            </table>
+            <table class="centered">
+                <tr id="rowTwo" class="evenRow">
+                    <td class="evenRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                    <td class="evenRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                    <td class="evenRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                    <td class="evenRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                    <td class="evenRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                    <td class="evenRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                    <td class="evenRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                    <td class="evenRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                </tr>
+                <tr class="evenRow">
+                    <td class="evenRow"><input type="button" value="Pick B1"></td>
+                    <td class="evenRow"><input type="button" value="Pick B2"></td>
+                    <td class="evenRow"><input type="button" value="Pick B3"></td>
+                    <td class="evenRow"><input type="button" value="Pick B4"></td>
+                    <td class="evenRow"><input type="button" value="Pick B5"></td>
+                    <td class="evenRow"><input type="button" value="Pick B6"></td>
+                    <td class="evenRow"><input type="button" value="Pick B7"></td>
+                    <td class="evenRow"><input type="button" value="Pick B8"></td>
+                </tr>
+            </table>
+            <table class="centered">
+                <tr id="rowThree" class="oddRow">
+                    <td class="halfOffset" class="oddRow"></td>
+                    <td class="oddRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                    <td class="oddRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                    <td class="oddRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                    <td class="oddRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                    <td class="oddRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                    <td class="oddRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                    <td class="oddRow"><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                </tr>
+                <tr>
+                    <td class="halfOffset"></td>
+                    <td class="oddRow"><input type="button" value="Pick A1"></td>
+                    <td class="oddRow"><input type="button" value="Pick A2"></td>
+                    <td class="oddRow"><input type="button" value="Pick A3"></td>
+                    <td class="oddRow"><input type="button" value="Pick A4"></td>
+                    <td class="oddRow"><input type="button" value="Pick A5"></td>
+                    <td class="oddRow"><input type="button" value="Pick A6"></td>
+                    <td class="oddRow"><input type="button" value="Pick A7"></td>
+                </tr>
+            </table>
+        </div>
+    <!--This Onclick should make a php call to take the information, validate, and submit to the sql database-->
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
