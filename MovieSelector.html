@@ -60,27 +60,11 @@
         <form method='post' id="confirmtime" action="GetMovieSeats.php">
         <div class="wrapper" >
             <select name="MovieTimes" id="movieTimes" >
-                <span id="">
-                    <?php
-                        require_once "../config.php";
-
-                        $movieid = $_POST["Movies"];
-
-                        echo "<select name='seatselector'>";
-                            $request = "SELECT start_time, end_time FROM ".$table." WHERE movie_name='".$movie."'";
-
-                            if($result = mysqli_query($conn, $request)){
-                                if(mysqli_num_rows($result) > 0){
-                                    //create dropdown entry for each SQL table row
-                                    while($row = mysqli_fetch_array($result)){
-                                        echo "<option value='".$row["movie_ID"]."'>".$row["start_time"]." - ".$row["end_time"]."</option>";}
-                                    // Free result set
-                                    mysqli_free_result($result);
-                                } else{
-                                    echo "No records matching your query";}
-                            } else{
-                            echo "ERROR: Could not execute " . mysqli_error($conn);}
-                    ?>
+                <span id="chooseTime">
+                    <option value="null">Please select a time...</option>
+                    <option value="time0"></option>
+                    <option value="time1"></option>
+                    <option value="time2"></option>
                 </span>
             </select>
             <input type="button" value="Confirm Time" name="submitMovieTime" id="submitMovieTime" onClick="document.getElementById('movieSeat').style.visibility='visible', document.getElementById('submitSeat').style.visibility='visible', document.getElementById('confirmmovie').submit();">
