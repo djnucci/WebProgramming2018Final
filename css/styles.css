@@ -15,7 +15,6 @@ html, body {
 
 body {
     display: table-cell;
-
     /* vertical-align: middle; */
     margin: auto;
 
@@ -36,10 +35,6 @@ p, h3{
 }
 h1{
     font-size: 80px;
-}
-
-button{
-    background-color: red;
 }
 
 img{
