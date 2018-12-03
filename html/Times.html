@@ -38,14 +38,18 @@
         <form action="../php/GetMovieStatus.php" method="POST">
           <div class="wrapper">
               <select name="Times" id="time">
-                  <span id="times" style="text-align:center;">
-                      <option value="null"></option>
-                      <option value="time0"></option>
-                      <option value="time1"></option>
-                      <option value="time2"></option>
+                  <span id="times">
+                    <option value="null">Please select a time...</option>
+                    <option value="time0"><span id="option0"></span></option>
+                    <option value="time1"><span id="option1"></span></option>
+                    <option value="time2"><span id="option2"></span></option>
                   </span>
               </select>
           </div>
+          <?php
+            include "../php/GetMovieStatus.php";
+            echo '<script type="text/javascript">'.'document.getElementById("option0").innerHTML = $time1;document.getElementById("option1").innerHTML = $time2;document.getElementById("option2").innerHTML = $time3;'.'</script>';
+          ?>
       </form>
 
         <div style="text-align:center"><input type="button" value="Submit" id="submitDOB" onclick="window.location.href='./html/Seating.html'"></div>
