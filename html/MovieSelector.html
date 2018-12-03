@@ -59,11 +59,7 @@
 
         <form method='post' id="confirmtime" action="GetMovieSeats.php">
         <div class="wrapper" >
-            <select name="MovieTimes" id="movieTimes" >
-                <span id="chooseTime">
 
-                </span>
-            </select>
             <input type="button" value="Confirm Time" name="submitMovieTime" id="submitMovieTime" onClick="document.getElementById('movieSeat').style.visibility='visible', document.getElementById('submitSeat').style.visibility='visible', document.getElementById('confirmmovie').submit();">
             <!--this onClick should take the information from the previous dropdown and take the requisite information from the sql database-->
         </div>
