@@ -86,7 +86,7 @@
           </div>
 
         <h3>Play Times:</h3>
-        <form action="../php/GetMovieStatus.php" method="POST">
+        <form action="../php/GetMovieStatus.php" method="POST" id="hello">
           <div class="wrapper">
               <select name="Times" id="time">
                   <span id="times">
@@ -97,7 +97,7 @@
                   </span>
               </select>
           </div>
-                <div style="text-align:center"><input type="submit" name='submit' form="idk" value="Submit" id="submitDOB" onclick="window.location.href='./html/Seating.html'"></div>
+                <div style="text-align:center"><input type="submit" name='submit' form="hello" value="Submit" id="submitDOB" onclick="window.location.href='./html/Seating.html'"></div>
       </form>
 
 
