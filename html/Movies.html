@@ -40,6 +40,22 @@
                 <li>Spoon: A 'The Office' Retrospective</li> 
             </ul>
             
+            <form action="../php/GetMovieStatus.php" method="POST">
+                <div class="wrapper">
+                    <select name="Movies" id="movie">
+                        <span id="movieName">
+                            <option value="null">Please select a movie...</option>
+                            <option value="movie0">70 Jump Street: Dental Hygiene School</option>
+                            <option value="movie1">8 Hours of Sleep on Elm Street</option>
+                            <option value="movie2">Stan Lee Cameo's: The Movie</option>
+                            <option value="movie3">Obligatory Rom-Com: A Horror Film</option>
+                            <option value="movie4">Spoon: A 'The Office' Retrospective</option>
+                        </span>
+                    </select>
+                </div>
+            </form>
+
+            <div style="text-align:center"><input type="button" value="Submit" id="submitDOB" onclick="window.location.href='./html/Times.html'"></div>
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
             <!-- Include all compiled plugins (below), or include individual files as needed -->

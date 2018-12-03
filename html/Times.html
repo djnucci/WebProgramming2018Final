@@ -34,15 +34,20 @@
           </div>
 
         <h3>Play Times:</h3>
-        <ul>
-          <li></li> 
-          <li></li> 
-          <li></li> 
-          <li></li> 
-          <li></li> 
-        </ul>
+        <form action="../php/GetMovieStatus.php" method="POST">
+          <div class="wrapper">
+              <select name="Times" id="time">
+                  <span id="times">
+                      <option value="null"></option>
+                      <option value="time0"></option>
+                      <option value="time1"></option>
+                      <option value="time2"></option>
+                  </span>
+              </select>
+          </div>
+      </form>
 
-        <input type="button" value="Go back" name="Back" id="back">
+        <div style="text-align:center"><input type="button" value="Submit" id="submitDOB" onclick="window.location.href='./html/Seating.html'"></div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
