@@ -35,15 +35,15 @@ Room C
 (Seating)
 Room A
     Row A:7 seats
-    Row B:6 seats
-    Row C:5 seats
+    Row B:8 seats
+    Row C:7 seats
 
 Room B
-    Row A:8 seats
-    Row B:5 seats
-    Row C:2 seats
+    Row A:7 seats
+    Row B:8 seats
+    Row C:7 seats
 
 Room C
-    Row A:3 seats
-    Row B:2 seats
-    Row C:3 seats
+    Row A:7 seats
+    Row B:8 seats
+    Row C:7 seats

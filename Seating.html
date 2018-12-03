@@ -36,10 +36,17 @@
               font-size: 80px;
             }
 
+            .seatImg{
+                width: 10vh;
+            }
+
+            .halfOffset{
+                width: 5vh;
+            }
         </style>
     </head>
     <body>
-        <h1>Please select a Room:</h1>
+        <h1>Please select a Theatre:</h1>
         <select name="Rooms" id="room">
             <span id="roomNames">
                 <option value="null">Please select a theatre...</option>
@@ -48,19 +55,48 @@
                 <option value="roomC">Theatre C</option>
             </span>
         </select>
-
+        
         <input type="button" value="Confirm Theatre" name="SubmitRoom" id="submitRoom">
 
-        <table id="roomSeating">
-            <td id="rowOne">
-                <tr></tr>
-            </td>
-            <td id="rowTwo">
-                <tr></tr>
-            </td>
-            <td id="rowThree">
-                <tr></tr>
-            </td>
+        <br><br> 
+        
+        <table>
+            <tr id="rowOne" class="oddRow">
+                <td class="halfOffset"></td>
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr id="rowTwo" class="evenRow">
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr id="rowThree" class="oddRow">
+                <td class="halfOffset"></td>
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+                <td><img src="pictures/seat.png" alt="seat" class="seatImg"></td>
+            </tr> 
         </table>
     </body>
 </html>
