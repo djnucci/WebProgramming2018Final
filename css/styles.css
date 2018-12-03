@@ -32,7 +32,10 @@ p, h1, h2, h3{
     text-align: center;
 }
 
-
+ul{
+    width:30%;
+    margin:auto;
+}
 
 img{
     width: 50%;
@@ -65,5 +68,3 @@ img{
     margin-right: auto;
     width: 50%;
 }
-
-
