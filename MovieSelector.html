@@ -37,7 +37,7 @@
 <div id="wrap">
   <p> Select your movie, then time, finally confirm which seat</p>
         <h3>Select a movie:</h3>
-        <form method='post' id="confirmmovie">
+        <form method='post' id="confirmmovie" action="GetMovieStatus.php">
         <div class="wrapper">
             <select name="Movies" id="movie">
                 <span id="movieName">
@@ -58,8 +58,8 @@
 
         <br><br>
 
-        <form method='post' id="confirmtime">
-        <div class="wrapper" style="visibility:hidden;">
+        <form method='post' id="confirmtime" action="phpfilename.php">
+        <div class="wrapper" >
             <select name="MovieTimes" id="movieTimes" >
                 <span id="">
                     <?php
@@ -91,7 +91,8 @@
 
         <br><br>
 
-        <div class="wrapper" style="visibility:hidden;" id="seats">
+<form method='post' id="confirmseat" action="phpfile.php">
+        <div class="wrapper" id="seats">
             <table class="centered">
                 <tr id="rowOne" class="oddRow">
                     <td class="halfOffset" class="oddRow"></td>
@@ -159,6 +160,7 @@
                 </tr>
             </table>
         </div>
+    </form>
     <!--This Onclick should make a php call to take the information, validate, and submit to the sql database-->
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
