@@ -1,11 +1,11 @@
 Jim's Movies
 
 Movie durations:
-    (m0) 70 Jump Street: Dental Hygiene School: 1:45
-    (m1) 8 Hours of Sleep on Elm Street (3D movie): 1:30
-    (m2) Stan Lee Cameo's: The Movie: 2:00
-    (m3) Obligatory Rom-Com: A Horror Film: 1:30
-    (m4) Spoon: A 'The Office' Retrospective: 1:45
+    (m0 - PG-13) 70 Jump Street: Dental Hygiene School: 1:45
+    (m1 - E) 8 Hours of Sleep on Elm Street (3D movie): 1:30
+    (m2 - PG-13) Stan Lee Cameo's: The Movie: 2:00
+    (m3 - R) Obligatory Rom-Com: A Horror Film: 1:30
+    (m4 - E) Spoon: A 'The Office' Retrospective: 1:45
 
 ~15 minute intermediary time for cleanup after the movies
 
