@@ -11,13 +11,13 @@ make movie selector page (✓)
 	select a seat from the available seating in the theatre where the movie is taking place (✓)
 	redirects back and forth to other three pages
 make available seating page (✓)
-	table for displaying data
+	table for displaying data (✓)
 	redirects back and forth to other three pages 
 make available movies page (✓)
-	table for displaying data
+	table for displaying data 
 	redirects back and forth to other three pages 
 make check times page (✓)
-	table for displaying data
+	table for displaying data 
 	redirects back and forth to other three pages 
 	
 Report 
