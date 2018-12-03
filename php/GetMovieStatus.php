@@ -7,9 +7,10 @@
 		$movieName = "Stan Lee Cameo's: The Movie";
 	} else if ($_POST["Movies"] == "movie3"){
 		$movieName = "Obligatory Rom-Com: A Horror Film";
-	} else{
+	} else if ($_POST["Movies"] == "movie4"){
 		$movieName = "Spoon: A 'The Office' Retrospective";
 	}
+	error_log(var_dump($_POST["Movies"]));
 	$timeA = $timeB = $timeC = "";
 
 	include "config.php";
@@ -90,9 +91,9 @@
               <select name="Times" id="time">
                   <span id="times">
                     <option value="null">Please select a time...</option>
-                    <option value="time0"><span id="option0"></span></option>
-                    <option value="time1"><span id="option1"></span></option>
-                    <option value="time2"><span id="option2"></span></option>
+                    <option value="time0">';echo json_encode($timeA); echo'</option>
+                    <option value="time1">';echo json_encode($timeB); echo'</option>
+                    <option value="time2">';echo json_encode($timeC); echo'</option>
                   </span>
               </select>
           </div>
