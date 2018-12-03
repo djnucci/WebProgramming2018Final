@@ -97,7 +97,7 @@
                   </span>
               </select>
           </div>
-                <div style="text-align:center"><input type="submit" name='submit' form="hello" value="Submit" id="submitDOB" onclick="window.location.href='./html/Seating.html'"></div>
+                <div style="text-align:center"><input type="submit" name="submit" form="hello" value="Submit" id="submitDOB" onclick="window.location.href="./html/Seating.html""></div>
       </form>
 
 
