@@ -28,22 +28,22 @@ html {
     background-image: linear-gradient(darkblue, lightblue);
 }
 p, h1, h2, h3{
-  color: black;
-  font-family: cambria, Helvetica, sans-serif;
+    color: black;
+    font-family: cambria, Helvetica, sans-serif;
 }
 p, h3{
-  text-align: center;
+    text-align: center;
 }
 h1{
-  font-size: 80px;
+    font-size: 80px;
 }
 
 button{
-  background-color: red;
+    background-color: red;
 }
 
 img{
-  width: 50%;
+    width: 50%;
 }
 
 #table1{
@@ -54,15 +54,22 @@ img{
 }
 
 #talk{
-  margin: 50px;
+    margin: 50px;
 }
 
 #tab{
-  padding: 50px;
+    padding: 50px;
 }
 
 #wrap, #room{
-  margin: auto;
-  text-align: center;
+    margin: auto;
+    text-align: center;
 
+}
+
+#reel{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
